@@ -28,6 +28,6 @@ os.chdir("/var/pgdump")
 for i in os.listdir(os.getcwd()):	
 	bkp_month = int (i[-24:-16])	
 	if (curr_month == bkp_month + 100 or curr_month >= bkp_month + 8900):
-		os.remove(bkp_file)
+		os.remove(i)
 
 
