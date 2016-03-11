@@ -1,0 +1,13 @@
+#!/bin/sh
+SERVICE='odoo'
+ 
+if ps ax | grep -v grep | grep -v postgres | grep $SERVICE > /dev/null
+then
+    echo "$SERVICE service running, everything is fine"
+else
+    echo "$SERVICE is not running"
+    /etc/init.d/$SERVICE start
+fi
+
+# crontab -e
+#*/10 * * * * /var/scripts/script_name 
