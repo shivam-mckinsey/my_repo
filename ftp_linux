@@ -2,11 +2,20 @@
 # prompt - stops the interactive mode and "y" to all
 # mput - multiple put 
 
+# We used wildcards while transfering Files from Local to FTP Server, see the use of PROMPT & mput
+# prompt - stops the interactive mode and "y" to all
+# mput - multiple put 
+
 #!/bin/sh
 echo "Marching in Backup Folder"
+DAY=$(date -d "$D" '+%d')
+MONTH=$(date -d "$D" '+%b')
+YEAR=$(date -d "$D" '+%Y')
+echo "$DAY $MONTH $YEAR"
+
 cd /backup/backup/db_backup/
-USER=ftpuser
-PASSWD=******************
+USER=ftpuser-odoo
+PASSWD=****************
 HOST=ftpserver
 echo "Settinng Up FTP for FTP SERVER"
 ftp -n $HOST <<SCRIPT
