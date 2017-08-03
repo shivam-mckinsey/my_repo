@@ -4,19 +4,19 @@
 #Creation Date: - 12th November 2016
 #Version:- 1.0
 
-#SourceIP='10.127.127.94'
+#SourceIP='192.168.127.94'
 SourceFolder='/usr/sap/BSD/interface/onebi/P2PG0085A/temp' 
 filename='P2P_CCTR.csv'
 #please supply filename as 'filename.tar.qz'
 tar_filename='P2P_CCTR.csv.tar.gz'  
 
-DestIP='93.183.10.20'
+DestIP='192.168.10.20'
 #windows destination folder 
 DestFolder='IT\\BSD\\incoming' 
 
 #FTP Details
-USER='NagarroSftp'
-PASSWD='R3ALdxMD33'
+USER='SftpUser'
+PASSWD='*********'
 
 echo "this step is complete "
 cd $SourceFolder
