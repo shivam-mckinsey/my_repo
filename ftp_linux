@@ -1,10 +1,9 @@
 # We used wildcards while transfering Files from Local to FTP Server, see the use of PROMPT & mput
 # prompt - stops the interactive mode and "y" to all
-# mput - multiple put 
+# mput - multiple put
+# binary - if you want to copy in binary mode, refer http://www.jscape.com/blog/ftp-binary-and-ascii-transfer-types-and-the-case-of-corrupt-files
+# ftp commands - https://kb.globalscape.com/KnowledgebaseArticle10407.aspx
 
-# We used wildcards while transfering Files from Local to FTP Server, see the use of PROMPT & mput
-# prompt - stops the interactive mode and "y" to all
-# mput - multiple put 
 
 #!/bin/sh
 echo "Marching in Backup Folder"
