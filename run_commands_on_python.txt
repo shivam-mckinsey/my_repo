@@ -26,6 +26,13 @@ output = subprocess.check_output("cat /etc/services", shell=True)
 OR
 
 import subprocess
+cmd = [sys.executable, '-m', 'pip', 'install'] + pip_args + [download_url]
+subprocess.call(' '.join(cmd), env=os.environ.copy(), shell=True)
+
+
+OR
+
+import subprocess
 
 proc = subprocess.Popen(["cat", "/etc/services"], stdout=subprocess.PIPE, shell=True)
 (out, err) = proc.communicate()
